@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import Faker from 'faker';
 import CommentDetail from './CommentDetail'
 import ApprovalCard from  './ApprovalCard'
+import Exercise2 from './exercise2'
+import CardContainer from './CardContainer'
+import FileInput from './FileInput'
+import TextInput from './TextInput'
 
 const App = () => {
     return (
@@ -41,4 +45,25 @@ const App = () => {
     );
 };
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+const App2 = () =>{
+    return (<div>
+        <Exercise2
+            title="Text1"
+            message="Message text"
+        />
+    </div>);
+}
+
+const App3 = () =>{
+    return (<div>
+        <CardContainer>
+            <FileInput />
+        </CardContainer>
+
+        <CardContainer>
+            <TextInput />
+        </CardContainer>
+    </div>);
+}
+
+ReactDOM.render(<App3 />, document.querySelector('#root'));
