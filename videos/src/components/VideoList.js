@@ -14,4 +14,4 @@ const VideoList = ({videos, onVideoSelect}) => {
     )
 }
 
-export default VideoList
+export default VideoList;
