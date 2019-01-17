@@ -1,3 +1,5 @@
+import { combineReducers } from 'react-redux'
+
 const songsReducer = () => {
     return [
         {title: 'Amigo Vulnerable', duration: '5:14'},
@@ -14,3 +16,8 @@ const songSelectedReducer = (selectedSong = null, action) => {
 
     return selectedSong;
 }
+
+export default combineReducers({
+    songs: songsReducer,
+    selectedSong: songSelectedReducer
+})
